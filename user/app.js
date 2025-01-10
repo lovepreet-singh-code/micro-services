@@ -6,6 +6,10 @@ const connect = require('./db/db')
 connect()
 const userRoutes = require('./routes/user.routes')
 const cookieParser = require('cookie-parser')
+const rabbitMq = require('./service/rabbit')
+
+rabbitMq.connect()
+
 
 
 
